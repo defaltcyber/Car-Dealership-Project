@@ -10,14 +10,12 @@ def cars(request):
     paged_cars = paginator.get_page(page)
 
     model_search = Car.objects.values_list('model', flat=True).distinct()
-    city_search = Car.objects.values_list('city', flat=True).distinct()
     year_search = Car.objects.values_list('year', flat=True).distinct()
     body_style_search = Car.objects.values_list('body_style', flat=True).distinct()
 
     data = {
         'cars': paged_cars,
         'model_search': model_search,
-        'city_search': city_search,
         'year_search': year_search,
         'body_style_search': body_style_search,
     }
