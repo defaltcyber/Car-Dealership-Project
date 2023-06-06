@@ -58,3 +58,30 @@ class Car(models.Model):
 
     def __str__(self):
         return self.car_title
+
+
+car_data = {
+    "car_title": "2023 Lamborghini Aventador SVJ",
+    "color": "Orange",
+    "model": "Aventador SVJ",
+    "year": 2023,
+    "price": 500000,
+    "description": "<p>The Lamborghini Aventador SVJ is a limited-production supercar manufactured by the Italian automotive company Lamborghini. It is the most powerful version of the Aventador and is designed for high-performance track driving.</p>\r\n\r\n<p>The Aventador SVJ is equipped with a naturally aspirated 6.5-liter V12 engine that produces an astonishing 759 horsepower, allowing it to accelerate from 0 to 60 mph in just 2.8 seconds. It features advanced aerodynamics, including an active rear wing and aero vectoring, which enhance its performance and handling.</p>\r\n\r\n<p>Inside the Aventador SVJ, you'll find a luxurious and sporty interior with premium materials and modern technology. It offers a comfortable seating arrangement for two passengers and includes features such as a touchscreen infotainment system, premium audio system, and carbon fiber accents.</p>",
+    "car_photo": "photos/2023/05/30/th-41096962",
+    "car_photo_1": "photos/2023/05/30/th-2552590400",
+    "car_photo_2": "photos/2023/05/30/th-3738237238",
+    "features": "Adaptive Suspension, Carbon Ceramic Brakes, Launch Control, GPS Navigation, Apple CarPlay, Android Auto, Lane Departure Warning, Reverse Camera",
+    "body_style": "Coupe",
+    "engine": "6.5L V12",
+    "transmission": "Automatic",
+    "interior": "Black",
+    "doors": "2",
+    "passengers": 2,
+    "vin_no": "ZXY9876543210",
+    "fuel_type": "Petrol",
+    "is_featured": True,
+    "created_date": datetime.now()
+}
+
+car = Car(**car_data)
+car.save()
