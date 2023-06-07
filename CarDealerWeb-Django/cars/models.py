@@ -104,6 +104,27 @@ car_data = {
     "is_featured": True,
     "created_date": datetime.now()
 }
-
+car_data= {
+    "car_title": "Dodge Hennessey Venom F5",
+    "color": "Yellow",
+    "model": "Hennessey Venom F5",
+    "year": 2023,
+    "price": 1800000,
+    "description": "<p>The Dodge Hennessey Venom F5 is a high-performance supercar built by Hennessey Performance Engineering based on the Dodge platform. It is a true speed demon with mind-blowing acceleration and top speed.</p>",
+    "car_photo": "photos/2023/05/30/th-3294177422.jpg",
+    "car_photo_1": "photos/2023/05/30/th-2405398302.jpg",
+    "car_photo_2": "photos/2023/05/30/th-2405398302.jpg",
+    "features": ["Carbon Ceramic Brakes", "Launch Control", "GPS Navigation", "Apple CarPlay", "Android Auto"],
+    "body_style": "Coupe",
+    "engine": "8.8L V8",
+    "transmission": "Automatic",
+    "interior": "Black",
+    "doors": "2",
+    "passengers": 2,
+    "vin_no": "ABC1234567890",
+    "fuel_type": "Petrol",
+    "is_featured": True,
+    "created_date": datetime.now()
+}
 car = Car(**car_data)
 car.save()
