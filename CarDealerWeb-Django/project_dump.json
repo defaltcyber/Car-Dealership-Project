@@ -4,7 +4,6 @@
     "pk": 2,
     "fields": {
         "car_title": "2017 Ferrari 488 GTB",
-        "state": "TX",
         "city": "Austin",
         "color": "White",
         "model": "488 GTB",
@@ -38,7 +37,7 @@
     "pk": 3,
     "fields": {
         "car_title": "2017 Ford Edge",
-        "state": "TX",
+        "": "TX",
         "city": "Dallas",
         "color": "Black",
         "model": "Edge",
