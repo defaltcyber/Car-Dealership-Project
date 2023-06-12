@@ -108,19 +108,19 @@ $(function () {
                     $('.sticky-header').addClass('header-shrink');
                 }
                 if($('.do-sticky').length < 1) {
-                    $('.company-logo img').attr('src', 'img\logos\carengine.jpg');
+                    $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
                 }
             }
             else {
                 $('.sticky-header').removeClass('header-shrink');
                 if($('.do-sticky').length < 1 && $('.fixed-header').length == 0 && $('.fixed-header2').length == 0) {
-                    $('.company-logo img').attr('src', '\img\logos\carengine.jpg');
+                    $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
                 } else {
-                    $('.company-logo img').attr('src', 'img\logos\carengine.jpg');
+                    $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
                 }
             }
         } else {
-            $('.company-logo img').attr('src', 'img\logos\carengine.jpg');
+            $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
         }
     }
 

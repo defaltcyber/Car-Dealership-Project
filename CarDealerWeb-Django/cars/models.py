@@ -60,7 +60,7 @@ class Car(models.Model):
         return self.car_title
 
 
-car_data = {
+car_datalist=[ {
     "car_title": "2023 Lamborghini Aventador SVJ",
     "color": "Orange",
     "model": "Aventador SVJ",
@@ -81,8 +81,8 @@ car_data = {
     "fuel_type": "Petrol",
     "is_featured": True,
     "created_date": datetime.now()
-}
-car_data = {
+},
+{
     "car_title": "Lamborghini Revuelto",
     "color": "Red",
     "model": "Revuelto",
@@ -103,8 +103,8 @@ car_data = {
     "fuel_type": "Petrol",
     "is_featured": True,
     "created_date": datetime.now()
-}
-car_data= {
+},
+{
     "car_title": "Dodge Hennessey Venom F5",
     "color": "Yellow",
     "model": "Hennessey Venom F5",
@@ -126,5 +126,7 @@ car_data= {
     "is_featured": True,
     "created_date": datetime.now()
 }
-car = Car(**car_data)
-car.save()
+]
+for car_data in car_datalist:
+    car = Car(**car_data)
+    car.save()
