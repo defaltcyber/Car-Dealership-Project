@@ -101,15 +101,16 @@
 
 <!-- Featured car start -->
 <div class="featured-car content-area-5">
-    <div class="container">
+    < class="container">
         <!-- Main title -->
         <div class="main-title">
-            <h1>Featured <span>Cars</span></h1>
-            <p>Amongst many of our available cars, here are some few picks that you might have an interest in.</p>
+            <h1>Featured<span>Cars</span></h1>
+           <p>Amongst many of our available cars, here are some few picks that you might have an interest in.</p>
         </div>
+        <div style="max-width:100%;">
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+            <div class=" slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
               {% for car in featured_cars %}
                 <div class="slick-slide-item">
                     <div class="car-box-3">
@@ -158,11 +159,7 @@
                             <h1 class="title">
                                 <a href="{% url 'car_detail' car.id %}">{{ car.car_title }}</a>
                             </h1>
-                            <div class="location">
-                                <a href="{% url 'car_detail' car.id %}">
-                                    <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
-                                </a>
-                            </div>
+                            
                             <ul class="facilities-list clearfix">
                                 <li>{{car.fuel_type}}</li>
                                 <li>{{car.miles | intcomma}} km</li>
@@ -179,11 +176,12 @@
             </div>
             <div class="slick-btn">
                 <div class="slick-prev slick-arrow-buton sab-4">
-                    <i class="fa fa-angle-left"></i>
-                </div>
+                   
+            <div class="socialm"> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"/></svg>
+                </div></div>
                 <div class="slick-next slick-arrow-buton sab-3">
-                    <i class="fa fa-angle-right"></i>
-                </div>
+                   <div class="socialm"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                </div></div>
             </div>
         </div>
     </div>
@@ -257,18 +255,16 @@
                         <h1 class="title">
                             <a href="{% url 'car_detail' car.id %}">{{car.car_title}}</a>
                         </h1>
-                        <div class="location">
-                            <a href="{% url 'car_detail' car.id %}">
-                                <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
-                            </a>
-                        </div>
+                        
                     </div>
+                     <div class="boxa">
                     <div class="footer clearfix">
                         <div class="pull-left ratings days">
                             <p class="cartype">{{car.body_style}}</p>
                         </div>
                         <div class="pull-right">
                             <p class="price">$ {{car.price | intcomma}}</p>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -281,42 +277,6 @@
 <!-- Rent car end -->
 
 
-<!-- Our team start -->
-<div class="our-team content-area bg-grea-3">
-    <div class="container">
-        <!-- Main title -->
-        <div class="main-title">
-            <h1>Executive <span>Team</span></h1>
-            <p>Team working behind maintaining the quality of our Car Dealership Website.</p>
-        </div>
-        <!-- Slick slider area start -->
-        <div class="slick-slider-area clearfix">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
-              {% for team in teams %}
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="{{team.facebook_link}}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="{{team.twitter_link}}" target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="{{team.google_plus_link}}" target="_blank" class="google-bg"><i class="fa fa-google"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="#">{{team.first_name}} {{team.last_name}}</a></h4>
-                            <h5>{{team.designation}}</h5>
-                        </div>
-                    </div>
-                </div>
-              {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Our team end -->
 
 
 

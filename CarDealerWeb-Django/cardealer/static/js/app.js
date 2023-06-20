@@ -63,7 +63,7 @@ $(function () {
 
 
     // Header shrink while page scroll
-    adjustHeader();
+
     doSticky();
     placedDashboard();
     $(window).on('scroll', function () {
@@ -87,19 +87,19 @@ $(function () {
                     $('.sticky-header').addClass('header-shrink');
                 }
                 if ($('.do-sticky').length < 1) {
-                    $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
+
                 }
             }
             else {
                 $('.sticky-header').removeClass('header-shrink');
                 if ($('.do-sticky').length < 1 && $('.fixed-header').length == 0 && $('.fixed-header2').length == 0) {
-                    $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
+
                 } else {
-                    $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
+
                 }
             }
         } else {
-            $('.company-logo img').attr('src', 'img/logos/carengine.jpg');
+
         }
     }
 
@@ -167,7 +167,7 @@ $(function () {
         animationSpeed: 200,
         scrollTrigger: false,
         scrollTarget: false,
-        scrollText: '<i class="fa fa-chevron-up"></i>',
+        scrollText: '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>',
         scrollTitle: false,
         scrollImg: false,
         activeOverlay: false,

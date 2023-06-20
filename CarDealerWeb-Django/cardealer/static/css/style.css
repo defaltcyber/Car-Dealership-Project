@@ -8,6 +8,20 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+
+
+
+
 #loader {
   z-index: 99;
   position: fixed;
@@ -68,13 +82,14 @@ body {
 
 a {
   cursor: pointer;
-  color: #ffffff;
+  color: #000000;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
+
 
 p {
   font-size: 15px;
@@ -112,7 +127,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn.focus,
@@ -123,6 +138,14 @@ ul {
 
 .btn {
   font-family: "Roboto", sans-serif;
+}
+
+.socialm svg {
+  fill: black;
+}
+
+.socialm {
+  fill: rgb(0, 0, 0);
 }
 
 /** Social media color **/
@@ -528,6 +551,7 @@ button:focus {
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   z-index: 1000 !important;
+
 }
 
 .margin-t-10 {
@@ -756,10 +780,12 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .top-header .list-inline {
+
   padding: 13px 0;
 }
 
 .list-inline a {
+  text-decoration: none;
   color: #fff;
   margin-right: 15px;
   font-size: 14px;
@@ -1059,6 +1085,10 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .banner .carousel-content.banner-info-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
   margin: 0 auto;
   right: 0;
   left: 0;
@@ -2038,7 +2068,15 @@ input[type="checkbox"]:checked+label:before {
   text-align: center;
 }
 
+.our-team .main-title h1 {
+  color: rgb(0, 0, 0);
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .main-title h1 {
+  color: rgb(255, 255, 255);
   font-size: 33px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -2051,6 +2089,7 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .main-title p {
+  color: rgb(255, 255, 255);
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -2240,7 +2279,14 @@ input[type="checkbox"]:checked+label:before {
 }
 
 /** Property box start **/
+.boxa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .car-box {
+
   position: relative;
   margin-bottom: 30px;
   background: #fff;
@@ -2330,7 +2376,7 @@ input[type="checkbox"]:checked+label:before {
   height: 36px;
   line-height: 35px;
   display: inline-block;
-  color: #fff;
+  color: #000000;
   margin: 16px 2px;
   border-radius: 3px;
   font-size: 13px;
@@ -2389,6 +2435,11 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .car-box .footer {
+  margin-top: 0px;
+  padding-top: 0px;
+
+  display: flex;
+  justify-content: space-between;
   border-top: 1px solid #e5e5e5;
   background: #fff;
   font-size: 14px;
@@ -2405,7 +2456,11 @@ input[type="checkbox"]:checked+label:before {
   border-top: solid 1px #efefef;
 }
 
+
 .car-box .footer .price {
+  display: flex;
+
+  justify-content: space-around;
   font-weight: 600;
   font-size: 18px;
   padding-right: 20px;
@@ -2446,7 +2501,7 @@ input[type="checkbox"]:checked+label:before {
 .car-model-2 .car-modal .modal-left {
   padding: 0;
   background: #535353;
-  color: #fff;
+  color: #000000;
 }
 
 .car-model-2 .car-modal .modal-content {
@@ -2469,7 +2524,7 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .car-model-2 .car-modal .modal-header p {
-  color: #fff;
+  color: #000000;
   margin-bottom: 0;
 }
 
@@ -2480,7 +2535,7 @@ input[type="checkbox"]:checked+label:before {
   margin: -60px -1px -15px auto;
   background: #3a3a3a;
   opacity: 1;
-  color: #fff;
+  color: #000000;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -2856,12 +2911,13 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .slick-arrow-buton {
+  fill: #000;
   width: 35px;
   height: 35px;
   line-height: 35px;
   top: 43%;
   border-radius: 50px;
-  color: #000;
+  color: #000000;
   z-index: 999;
   background: #fff;
   position: absolute;
@@ -2889,6 +2945,7 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .slick-btn {
+
   text-align: center;
   max-width: 100px !important;
   margin: 0 auto;
@@ -3126,6 +3183,12 @@ input[type="checkbox"]:checked+label:before {
   margin: 0 0 0 20px;
   font-size: 15px;
 }
+
+.waaa3333 {
+  justify-content: flex-end;
+}
+
+
 
 .car-box-3 .footer ul li {
   display: inline-block;
@@ -3974,197 +4037,137 @@ input[type="checkbox"]:checked+label:before {
 
 
 
-/** Footer start **/
-footer {
-
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+  position: relative;
+  margin-top: 45px;
+  padding-top: 90px;
   background: #000000;
 }
 
-.footer ul li a {
+.footer p {
+  color: white;
+}
+
+.footer .footer-contact,
+.footer .footer-linkk,
+.footer .footer-newsletter {
+  position: relative;
+  margin-bottom: 45px;
   color: #ffffff;
 }
 
-.footer h4 {
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+  margin-bottom: 30px;
   font-size: 20px;
-  margin-bottom: 25px;
-  font-weight: 400;
-  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #E81C2E;
 }
 
-.footer .footer-item {
-  margin-bottom: 60px;
-}
-
-.footer .footer-inner .links li {
+.footer .footer-link a {
+  display: block;
   margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  padding-left: 20px;
+  color: #ffffff;
+  transition: .3s;
+}
+
+
+
+.footer .footer-link a:hover {
+  color: #E81C2E;
+  letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+  width: 25px;
+  color: white;
+}
+
+.footer .footer-social {
   position: relative;
-  line-height: 20px;
+  margin-top: 20px;
+  display: flex;
 }
 
-.footer .footer-inner .links li a i {
-  left: 0;
-  position: absolute;
-  top: 0;
-  line-height: 22px;
-}
-
-.footer .footer-inner .links li:last-child {
-  margin-bottom: 0;
-}
-
-.footer .footer-inner .links li a:hover {
-  color: #ffffff;
-}
-
-.footer a {
-  color: #ffffff;
-}
-
-.footer .footer-inner p {
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-}
-
-.footer .footer-inner p a {
-  color: #ffffff;
-}
-
-.footer .footer-inner .contact-info li {
-  margin-bottom: 15px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #ffffff;
-  position: relative;
-  padding-left: 25px;
-}
-
-.footer .footer-inner .contact-info li i {
-  left: 0;
-  position: absolute;
-  line-height: 22px;
-}
-
-.footer .social-list-2 {
-  float: right;
-}
-
-.footer .social-list-2 li {
-  display: inline-block;
-  font-size: 16px;
-  text-align: center;
-}
-
-.footer .social-list-2 li a {
-  margin: 0 2px;
-  color: #fff;
+.footer .footer-social a {
   width: 40px;
   height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #202C45;
+  background: #ffffff;
+  border-radius: 40px;
+  margin-right: 5px;
+  transition: .5s;
 }
 
-.footer .social-list-2 li a:hover {
-  box-shadow: none;
+.footer .footer-social a:last-child {
+  margin: 0;
 }
 
-.footer .facebook-bg:hover {
-  background: #4867aa !important;
-}
-
-.footer .twitter-bg:hover {
-  background: #56d7fe !important;
-}
-
-.footer .google-bg:hover {
-  background: #dc4e41 !important;
-}
-
-.footer .linkedin-bg:hover {
-  background: #0177b5 !important;
-}
-
-.footer .f-logo {
-  margin-bottom: 0px;
-  height: 50px;
-}
-
-.footer .footer-inner .subscribe-box {
-  text-align: left;
-}
-
-.sub-footer {
-  padding: 20px 0;
-  text-align: center;
-  margin-bottom: 0;
-  background: #202c54;
-  color: #fff;
-}
-
-.sub-footer p {
-  margin-bottom: 0;
+.footer .footer-social a:hover {
   color: #ffffff;
-  text-align: left;
-  line-height: 44px;
+  background: #E81C2E;
 }
 
-.footer .form-inline {
+.footer .footer-newsletter form {
+  position: relative;
   width: 100%;
 }
 
-.footer .footer-inner form .form-control {
-  width: 100%;
-  height: 44px;
-  padding: 10px 15px;
-  font-size: 15px;
-  outline: 0;
-  border: transparent;
-  border-radius: 3px;
-  margin-bottom: 10px !important;
+.footer .footer-newsletter input {
+  margin-bottom: 15px;
+  height: 45px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
 }
 
-.footer .form-inline .btn {
-  width: 100%;
-  padding: 10px 13px;
-  font-size: 15px;
-  font-weight: 400;
-  border-radius: 3px;
-}
-
-.footer .recent-posts .media h5 a {
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.footer .recent-posts .media h5 a:hover {
-  color: #ffffff;
-}
-
-.footer .recent-posts .listing-post-meta {
+.footer .footer-newsletter label {
+  margin-top: 5px;
+  color: #777777;
   font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer .footer-newsletter .btn.btn-custom {
+  width: 100%;
+  color: #202C45;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 0 #E81C2E;
+}
+
+.footer .footer-newsletter .btn:hover {
+  color: #ffffff;
+  background: #E81C2E;
+  box-shadow: inset 200px 0 0 0 #E81C2E;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
+
+.footer .copyright p {
+  margin: 0;
   color: #ffffff;
 }
 
-.footer .recent-posts .listing-post-meta a {
+.footer .copyright p a {
+  color: #E81C2E;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer .copyright p a:hover {
   color: #ffffff;
-}
-
-.footer .footer-inner .text {
-  margin-right: 30px;
-}
-
-.footer .s-border {
-  background: #000000;
-}
-
-.footer .m-border {
-  background: #000000;
 }
 
 /** Brand box start **/
@@ -4614,6 +4617,10 @@ footer {
   background-size: cover;
   width: 100%;
   padding: 100px 0 70px;
+}
+
+.featured-car p {
+  color: white;
 }
 
 .service-box ul {
@@ -5357,6 +5364,7 @@ footer {
 }
 
 .service-info h3 {
+  color: #000;
   font-size: 20px;
   font-weight: 400;
   position: relative;
@@ -5366,7 +5374,7 @@ footer {
 .service-info .number {
   font-size: 170px;
   line-height: 1;
-  color: #f6f6f6;
+  color: red;
   display: inline-block;
   position: absolute;
   z-index: 0;
@@ -5378,6 +5386,7 @@ footer {
 }
 
 .service-info p {
+  color: #000;
   line-height: 26px;
   margin-bottom: 0;
   font-size: 15px;
@@ -5897,6 +5906,8 @@ input[type="radio"] {
   background-color: #fff;
 }
 
+
+
 .contact-section .form-section .form-check-label {
   padding-left: 25px;
   margin-bottom: 0;
@@ -6207,12 +6218,13 @@ input[type="radio"] {
 }
 
 .search-box-4 {
+
   position: absolute;
   padding: 25px 25px 10px;
-  max-width: 400px !important;
+  max-width: 300px !important;
   width: 100%;
   top: 25%;
-  right: 10%;
+  right: 4%;
   z-index: 1;
   background: #fff;
   border-radius: 10px;
@@ -6225,6 +6237,7 @@ input[type="radio"] {
   box-shadow: none;
   border: 1px solid #e0e0e0;
   background: #fff;
+
 }
 
 .search-box-4 .btn-md {
@@ -8511,6 +8524,7 @@ input[type="tel"] {
   }
 
   .banner .carousel-content.bi-2 {
+
     padding-top: 100px;
   }
 
@@ -9931,6 +9945,8 @@ textarea::-webkit-input-placeholder {
 
 .car-box .footer .cartype {
   font-weight: 600;
+  display: flex;
+  justify-content: space-around;
   font-size: 18px;
   padding-right: 20px;
   margin-bottom: 0;
@@ -9954,4 +9970,100 @@ a.nav-link.active {
 .tabbing-box .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #fff !important;
+}
+
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team .row {
+  justify-content: space-around;
+}
+
+.team {
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  padding: 45px 0 15px 0;
+}
+
+.team .team-item {
+
+
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.team .team-img {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.team .team-img img {
+  width: 100%;
+  transition: .3s;
+}
+
+.team .team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team .team-text {
+
+  position: relative;
+  width: 100%;
+  padding: 35px 30px 30px 30px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+  transition: .5s;
+}
+
+.team .team-item:hover .team-text {
+  background: #E81C2E;
+}
+
+.team .team-text h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.team .team-text p {
+  margin: 0;
+  color: #000000;
+}
+
+.team .team-social {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: -20px;
+  left: 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.team .team-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.team .team-item:hover .team-social a {
+  background: #E81C2E;
+}
+
+.team .team-social a:hover {
+  color: #000000;
 }
