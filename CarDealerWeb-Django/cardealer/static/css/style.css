@@ -7359,6 +7359,7 @@ input[type="tel"] {
 }
 
 .tabbing-box .nav-tabs {
+
   border-bottom: none;
   background: #fff;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
@@ -7366,11 +7367,13 @@ input[type="tel"] {
 
 .tabbing-box .nav-tabs .nav-link {
   display: block;
+  color: black;
   padding: 12px 17px 10px;
 }
 
 .tabbing-box .nav-tabs li {
   font-size: 16px;
+
   font-weight: 400;
 }
 
