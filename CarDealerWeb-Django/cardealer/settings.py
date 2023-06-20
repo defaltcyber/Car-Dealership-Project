@@ -34,6 +34,8 @@ LOGIN_REDIRECT_URL = 'dashboard'
 
 
 # Application definition
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 
 INSTALLED_APPS = [
     'cars.apps.CarsConfig',
@@ -140,9 +142,6 @@ USE_L10N = True
 
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
@@ -166,8 +165,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'harimezakariae@gmail.com'
-EMAIL_HOST_PASSWORD = 'De1fa0cy0'
+EMAIL_HOST_PASSWORD = 'pfgrpgxgxhssuago'
 EMAIL_USE_TLS = True
+
+
 
 
 # Whitenoise settings
