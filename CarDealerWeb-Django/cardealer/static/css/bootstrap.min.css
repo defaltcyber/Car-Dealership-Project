@@ -5342,8 +5342,8 @@ fieldset:disabled .btn {
 }
 
 .alert-primary {
-    color: #084298;
-    background-color: #cfe2ff;
+    color: black;
+    background-color: white;
     border-color: #b6d4fe
 }
 

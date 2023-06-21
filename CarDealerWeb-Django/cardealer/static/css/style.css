@@ -884,6 +884,11 @@ input[type="checkbox"]:checked+label:before {
   margin-left: 20px;
 }
 
+.alert-primary h4 {
+  color: black;
+
+}
+
 .header-transparent {
   position: absolute;
   z-index: 9;
